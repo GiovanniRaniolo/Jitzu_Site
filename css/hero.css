@@ -1,0 +1,92 @@
+.hero {
+    background-image: url('/img/background.png');
+    background-size: cover;
+    background-position: left center;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+.hero-content {
+   
+    padding: 0 22%;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    padding: 0 22%; 
+}
+
+.social-icons a img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.2); /* Ingrossa l'icona del 20% */
+}
+
+.fixed-icon {
+    position: fixed;
+    top: 40px;
+    left: 40px;
+}
+
+.fixed-icon img {
+    width: 40px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.fixed-icon:hover img {
+    transform: scale(1.2); /* Ingrossa l'icona del 20% */
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        max-width: 100%;
+        padding: 0; 
+        margin-bottom: 20%; 
+    }
+
+    .social-icons {
+        display: flex;
+        flex-direction: row; 
+        position: absolute;
+        top: 90%; 
+        left: 50%; 
+        transform: translateX(-50%);
+        justify-content: center; 
+    }
+
+    .social-icons a img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+
+    .fixed-icon {
+        top: 20px;
+        left: 20px;
+    }
+}

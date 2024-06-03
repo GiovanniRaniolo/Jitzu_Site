@@ -1,0 +1,59 @@
+/* Definizione del font Montserrat */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_ZpC3gnD_g.woff2') format('woff2');
+    font-weight: 400; /* Peso del font */
+    font-style: normal; /* Stile del font */
+}
+
+/* Definizione del font Raleway */
+@font-face {
+    font-family: 'Raleway';
+    src: url('https://fonts.gstatic.com/s/raleway/v18/1Ptug8zYS_SKggPNyCAIT5lu.woff2') format('woff2');
+    font-weight: 400; /* Peso del font */
+    font-style: normal; /* Stile del font */
+}
+
+.hero-content h1 {
+    color: rgb(187, 255, 0);
+    font-size: 5em;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hero-content h2 {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #eeecec;
+    font-family: 'Raleway', sans-serif;
+}
+
+h3 {
+    color: rgb(187, 255, 0);
+    font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-size: 1.em;
+    margin-top: 10px;
+    color: #eeecec;
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    color: #fff;
+}
+
+h4 {
+    color: rgb(187, 255, 0);
+    font-size: 0.7em;
+
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+
+
+

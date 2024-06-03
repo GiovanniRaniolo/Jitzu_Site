@@ -1,0 +1,87 @@
+.about {
+    display: flex;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #131313;
+}
+
+.image-container {
+    flex: 1;
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.text-container {
+    flex: 1;
+    padding: 0 20px; /* Aggiunto padding */
+    text-align: center;
+    width: 50%;
+}
+
+
+.line-container {
+    width: 20%; /* Imposta la larghezza */
+    margin: 20px auto 0 auto; /* Imposta i margini */
+}
+
+.line-container hr {
+    border: 0; /* Rimuove il bordo */
+    height: 2px; /* Imposta l'altezza */
+    background-color: #ccfa01; 
+    width: 100%;
+}
+
+.highlight {
+    font-family: 'Raleway', sans-serif;
+    color: rgb(187, 255, 0);
+    text-align: center; /* Allinea il testo al centro */
+    margin: 20px; /* Spazio inferiore */
+}
+
+.bio-text {
+    max-width: 600px;
+    /* width: 100%; */
+    margin: 0 auto;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+
+    .about-content {
+        flex-direction: column; /* Cambia la direzione flessibile a colonna */
+        align-items: center; /* Allinea gli elementi al centro */
+        text-align: center; /* Allinea il testo al centro */
+    }
+    
+    .image-container {
+        width: 100%; /* L'immagine occupa l'intera larghezza del contenitore */
+    }
+    
+    .image-container img {
+        width: 100%; /* L'immagine si adatta alla larghezza del suo contenitore */
+        height: auto; /* L'altezza si adatta proporzionalmente */
+    }
+    
+    .content {
+        max-width: 80%; /* Larghezza massima del contenuto */
+        margin-top: 20px; /* Spazio sopra il contenuto */
+    }
+
+    .text-container {
+        width: 100%;
+    }
+    
+    .text-container h3 {
+        margin-top: 20px;
+    }
+}
